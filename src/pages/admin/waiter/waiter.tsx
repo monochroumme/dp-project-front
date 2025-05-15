@@ -25,6 +25,7 @@ const columns: ColumnType<TOrder>[] = [
   {
     dataIndex: "_actions_",
     title: "Actions",
+    width: "100px",
     render: (_, order) => <WaiterServeSwitch order={order} />,
   },
 ];
