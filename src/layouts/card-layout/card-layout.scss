@@ -1,0 +1,67 @@
+.card-layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  &__top-content {
+    position: absolute;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ant-card {
+    width: 100%;
+    max-width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    position: relative;
+    overflow: hidden;
+
+    .ant-card-head {
+      border-bottom: none;
+      color: var(--color-primary);
+
+      &-title {
+        padding-bottom: 0;
+        text-align: center;
+      }
+    }
+
+    .ant-card-body {
+      padding-top: 12px;
+    }
+
+    .ant-input {
+      color: var(--color-primary);
+    }
+
+    a.ant-typography {
+      color: var(--ant-color-primary);
+    }
+
+    .ant-form {
+      > .ant-space {
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
+
+      .ant-form-item {
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

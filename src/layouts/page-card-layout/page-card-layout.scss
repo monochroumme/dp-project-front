@@ -1,0 +1,47 @@
+.page-card-layout {
+  padding: 32px;
+  height: 100%;
+  display: flex;
+
+  &__bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__card {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    padding: 32px;
+    max-width: 1000px;
+    margin: auto;
+    background: #ffffff;
+    z-index: 1;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &-title {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &-box {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+    }
+
+    &-content {
+      margin-top: 32px;
+    }
+  }
+}

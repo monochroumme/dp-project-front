@@ -1,0 +1,63 @@
+{
+  "name": "dp-project-front",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@ant-design/v5-patch-for-react-19": "^1.0.3",
+    "@reduxjs/toolkit": "^2.8.2",
+    "@tanstack/react-query": "^5.76.1",
+    "antd": "^5.25.1",
+    "axios": "^1.9.0",
+    "lodash": "^4.17.21",
+    "notistack": "^3.0.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.6.0",
+    "react-router-dom": "^7.6.0"
+  },
+  "devDependencies": {
+    "@tanstack/eslint-plugin-query": "^5.74.7",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^20.12.9",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "18.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-refresh": "^0.4.6",
+    "globals": "^16.0.0",
+    "less": "^4.2.0",
+    "sass": "1.75.0",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.7.0",
+    "vite": "^6.3.5",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "no-param-reassign": [
+    "error",
+    {
+      "props": false
+    }
+  ],
+  "func-style": [
+    "error",
+    "expression",
+    {
+      "allowArrowFunctions": true
+    }
+  ]
+}

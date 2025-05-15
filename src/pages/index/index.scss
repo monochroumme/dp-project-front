@@ -1,0 +1,59 @@
+.index-page {
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  &__cart-btn {
+    &-count {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(50%, -50%);
+      border-radius: 500px;
+      font-size: 10px;
+      line-height: 100%;
+      padding: 2px 4px;
+      background: orangered;
+      color: #ffffff;
+      z-index: 1;
+    }
+
+    &-wrapper {
+      position: relative;
+    }
+  }
+
+  &__coffee-card {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #1677ff;
+    overflow: hidden;
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &-wrapper {
+        width: 100%;
+        padding-bottom: 100%;
+        position: relative;
+      }
+    }
+
+    &-bottom {
+      padding: 16px;
+
+      &-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+    }
+  }
+}

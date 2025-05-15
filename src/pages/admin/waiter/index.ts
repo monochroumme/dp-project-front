@@ -1,0 +1,1 @@
+export { AdminWaiterPage } from "./waiter";
