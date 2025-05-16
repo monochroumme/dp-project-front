@@ -19,7 +19,8 @@ const columns: ColumnType<TOrder>[] = [
   {
     dataIndex: "order",
     title: "Order",
-    render: (_, order) => order.items.map((item) => item.name).join(", "),
+    render: (_, order) =>
+      order.items.map((item) => `${item.name} x${item.quantity}`).join(", "),
     width: "300px",
   },
   {
@@ -70,6 +71,7 @@ const AdminWaiterPage = () => {
           columns={columns}
           dataSource={orders}
           pagination={{ position: ["bottomCenter"], hideOnSinglePage: true }}
+          rowKey="id"
         />
       ) : null}
     </PageCardLayout>

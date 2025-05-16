@@ -146,6 +146,7 @@ const AdminOwnerPage = () => {
             columns={waitersTableColumns}
             dataSource={waiters}
             pagination={{ position: ["bottomCenter"], hideOnSinglePage: true }}
+            rowKey="id"
           />
         ) : null}
       </PageCardLayout>
